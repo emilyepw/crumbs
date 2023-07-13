@@ -139,13 +139,14 @@ p {
 main {
   min-height: 50vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .container {
   width: 90vw;
-  margin: 5rem 0;
+  margin: 2rem 0;
   max-width: var(--fixed-width);
   background: var(--clr-white);
   border-radius: var(--radius);

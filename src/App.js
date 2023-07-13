@@ -11,11 +11,17 @@ function App() {
           <h1>Crumbs</h1>
       </header>
       <main>
-      <section className='container'>
-        <h3>{items.length} expiring today</h3>
-        <List items={items} />
-        <button onClick={() => setItems([])}>Clear All</button>
-      </section>
+        <section className='container'>
+          <h3>{items.length} expiring today</h3>
+          <List items={items} />
+          <button onClick={() => setItems([])}>Clear All</button>
+        </section>
+        
+        <section className='container'>
+          <h3>Add more items</h3>
+          <input type="text" id="item" className="Add-items"></input>
+          <button onClick={() => setItems([])}>Add</button>
+        </section>
     </main>
     </body>
   );
