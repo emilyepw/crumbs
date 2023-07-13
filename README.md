@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Semantic HTML
+
+Semantic HTML is used to give more meaning to the content within the tags, which is especially important in making the code easier to read for developers. 
+
+Additionally, Semantic HTML allows the app to be more accessible for users that are blind or visually impaired.
+
+
 ## Available Scripts
 
 In the project directory, you can run:

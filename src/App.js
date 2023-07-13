@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react'
+import data from './data'
+import List from './List'
 
 function App() {
+  const [items, setItems] = useState(data)
   return (
-    <div className="App">
+    <body>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <h1>Crumbs</h1>
       </header>
-    </div>
+      <main>
+      <section className='container'>
+        <h3>{items.length} expiring today</h3>
+        <List items={items} />
+        <button onClick={() => setItems([])}>Clear All</button>
+      </section>
+    </main>
+    </body>
   );
 }
 
