@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState } from 'react'
 import data from './data'
 import List from './List'
+import AddItemForm from './AddItemForm'
 
 function App() {
   const [items, setItems] = useState(data)
@@ -19,8 +20,7 @@ function App() {
         
         <section className='container'>
           <h3>Add more items</h3>
-          <input type="text" id="item" className="Add-items"></input>
-          <button onClick={() => setItems([])}>Add</button>
+          <AddItemForm />
         </section>
     </main>
     </body>

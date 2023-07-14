@@ -4,12 +4,12 @@ const List = ({ items }) => {
     return(
         <>
         {items.map((item) => {
-            const { id, name, brand } = item;
+            const { id, name, brand, expiration } = item;
             return (
                 <article key={id} className='item'>
                     <div>
                      <h4>{name}</h4>
-                     <p>{brand}</p>
+                     <p>{brand} - {expiration}</p>
                     </div>
                  </article>
             );
