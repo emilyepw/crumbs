@@ -10,7 +10,7 @@ function App() {
   return (
     <body>
       <header className="App-header">
-        <img src={crumbsAlt} alt="Crumbs logo" />
+        <img src={crumbsAlt} alt="Crumbs logo" className="App-logo" />
       </header>
       <main>
         <section className='container'>
